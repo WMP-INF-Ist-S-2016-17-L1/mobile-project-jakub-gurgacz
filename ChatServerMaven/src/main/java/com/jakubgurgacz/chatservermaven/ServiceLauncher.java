@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  *
  * @author Fiop_20
  */
-public class ServiceLaunhcer extends Thread {
+public class ServiceLauncher extends Thread {
 
     public static ChatServer cs;
     ServerSocket serverSocket;
@@ -26,7 +26,7 @@ public class ServiceLaunhcer extends Thread {
     DatabaseConnection databaseConnection;
     ClientList clientList;
 
-    public ServiceLaunhcer(ChatServer cs) {
+    public ServiceLauncher(ChatServer cs) {
         this.cs = cs;
     }
 
@@ -44,7 +44,7 @@ public class ServiceLaunhcer extends Thread {
         try {
             serverSocket = new ServerSocket(PORT);
         } catch (IOException ex) {
-            Logger.getLogger(ServiceLaunhcer.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ServiceLauncher.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         Client c;

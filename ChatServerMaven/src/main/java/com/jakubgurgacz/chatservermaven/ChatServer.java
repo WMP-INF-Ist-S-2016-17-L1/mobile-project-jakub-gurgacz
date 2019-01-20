@@ -31,7 +31,7 @@ public class ChatServer extends Application {
     private static Socket socket;
     public static int PORT = 10000;
 
-    static ServiceLaunhcer launhcer;
+    static ServiceLauncher launhcer;
 
     static DatabaseConnection databaseConnection;
 
@@ -71,7 +71,7 @@ public class ChatServer extends Application {
         try {
             serverSocket = new ServerSocket(PORT);
         } catch (IOException ex) {
-            Logger.getLogger(ServiceLaunhcer.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ServiceLauncher.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         Client c;
