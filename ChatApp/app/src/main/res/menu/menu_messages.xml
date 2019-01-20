@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_change_color"
+        app:showAsAction="never"
+        android:title="@string/change_color">
+    </item>
+    <item
+        android:id="@+id/quit_conversation"
+        android:title="@string/quit_conversation"
+        app:showAsAction="never">
+    </item>
+</menu>
